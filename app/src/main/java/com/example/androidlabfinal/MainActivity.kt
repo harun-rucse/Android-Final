@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+    val bd = "Bangladesh"
     private fun getJsonData(lat: String, long: String) {
         val API_KEY = "7dca1674a10aeeddb54e09b7e638a0ff" // use your own api_key
         val queue = Volley.newRequestQueue(this)
