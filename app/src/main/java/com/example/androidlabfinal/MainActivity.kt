@@ -146,8 +146,8 @@ class MainActivity : AppCompatActivity() {
             weather_img.visibility = View.VISIBLE
         }
 
-        city.text = "City Name: " + response.getString("name")
-        country.text = "Country: " + response.getJSONObject("sys").getString("country")
+        city.text = "City Name:" + response.getString(" name")
+        country.text = "Country:" + response.getJSONObject(" sys").getString("country")
         var tempr = response.getJSONObject("main").getString("temp")
         temp.text = "Temparature: ${(tempr.toFloat() - 273).toInt()}°C"
         humidity.text = "Humidity: " + response.getJSONObject("main").getString("humidity") + "%"
